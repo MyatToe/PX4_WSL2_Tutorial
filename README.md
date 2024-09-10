@@ -52,21 +52,26 @@ Follow these steps to install the required packages and PX4 version 1.13.2 on Ub
     sudo bash Tools/setup/ubuntu.sh
     sudo -s reboot
     ```
+ 
     reboot
-
-4. **Navigate to the PX4 directory:**
-    ```sh
-    cd PX4-Autopilot
-    ```
-
-5. **Initialize and update submodules:**
+4. **Initialize and update submodules:**
     ```sh
     git submodule update --init --recursive
     ```
-
-6. **Build PX4:**
+5. **Install QGC**
+   https://docs.qgroundcontrol.com/master/en/qgc-user-guide/getting_started/download_and_install.html
+6. **Navigate to the PX4 directory:**
     ```sh
-    make px4_sitl_default
+    cd PX4-Autopilot
+    sudo make px4_sitl gazebo
     ```
+![alt text](/img/Gazebo.png "Title")
 
-By following these steps, you will have PX4 version 1.13.2 installed and ready to use on your Ubuntu system.
+1. **Run PX4 with Commander:**
+    ```sh
+    commander takeoff
+    commander land
+    commander rtl
+    ```
+![alt text](/img/Commandar.png "Title")
+
