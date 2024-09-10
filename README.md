@@ -60,6 +60,7 @@ Follow these steps to install the required packages and PX4 version 1.13.2 on Ub
     ```
 5. **Install QGC**
    https://docs.qgroundcontrol.com/master/en/qgc-user-guide/getting_started/download_and_install.html
+
 6. **Navigate to the PX4 directory:**
     ```sh
     cd PX4-Autopilot
@@ -67,11 +68,16 @@ Follow these steps to install the required packages and PX4 version 1.13.2 on Ub
     ```
 ![alt text](/img/Gazebo.png "Title")
 
-1. **Run PX4 with Commander:**
+7. **Run PX4 with Commander:**
     ```sh
     commander takeoff
     commander land
     commander rtl
     ```
 ![alt text](/img/Commandar.png "Title")
+
+8. Mission Flight
+After install QGC you can create or upload the mission for SITL.
+    ![alt text](/img/QGC1.png "Title")
+
 
