@@ -28,7 +28,6 @@
 ### Ubuntu Part
 #### Installing Required Packages and PX4 Version 1.13.2 on Ubuntu
 
-
 Follow these steps to install the required packages and PX4 version 1.13.2 on Ubuntu:
 
 1. **Update the package list:**
@@ -48,8 +47,12 @@ Follow these steps to install the required packages and PX4 version 1.13.2 on Ub
 
 3. **Clone the PX4 repository:**
     ```sh
-    git clone https://github.com/PX4/PX4-Autopilot.git --branch v1.13.2 --recursive
+    sudo -s git clone -b v1.13.2 https://github.com/PX4/PX4-Autopilot.git
+    cd PX4-Autopilot
+    sudo bash Tools/setup/ubuntu.sh
+    sudo -s reboot
     ```
+    reboot
 
 4. **Navigate to the PX4 directory:**
     ```sh
