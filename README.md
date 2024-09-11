@@ -80,4 +80,8 @@ Follow these steps to install the required packages and PX4 version 1.13.2 on Ub
 After install QGC you can create or upload the mission for SITL.
     ![alt text](/img/QGC1.png "Title")
 
-
+9. Flight Log Checker
+    ```sh
+    ~\PX4-Autopilot\build\px4_sitl_default\tmp\rootfs\log\
+    ```
+    https://logs.px4.io/
